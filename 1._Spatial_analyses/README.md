@@ -192,7 +192,4 @@ Create and export the areas of each transition annually, according to a Bounding
 
 
 
-# Scheme
-## Under Development {
-<img src='/aux/SEEG_v1_0.0.1.png' height='auto' width='auto' align='right'>
 
