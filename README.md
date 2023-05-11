@@ -4,7 +4,7 @@
 <h1>  Three decades of GHG emissions and removals associated with land use change in Brazil </h1>
 <div>
     
-# About SEEG_BR 
+# About SEEG_MUT
 We present a method to spatially allocate all of the emissions and removals due to land conversion in Brazil at high spatial and temporal scales. The method presented here is based on the framework of the National Communications, considering the processes quantified, the equations, emission factors, carbon stocks, and annual increments, but improves on the spatial information over which all calculations are applied. 
 
 ## Workflow
