@@ -11,11 +11,10 @@ We present a method to spatially allocate all of the emissions and removals due 
    
    Folders 📂 are organized by key-steps  ✨ and contain a set of codes {} following the SEEG_BR_Munipality classification scheme:
 
-1. ✨ Spatial_analyses [GEE.js](https://github.com/souza-eab/SEEG_BR/tree/main/1._Spatial_analyses)
+1. ✨ Spatial_analyses [GEE.js](https://github.com/SEEG-Brazil/SEEG_MUT/tree/main/1._Spatial_analyses)
 
-2. ✨ Estimates.R [Estimates.R](https://github.com/souza-eab/SEEG_BR/tree/main/2._Estimates)
+2. ✨ Estimates.R [Estimates.R](https://github.com/SEEG-Brazil/SEEG_MUT/tree/main/2._Estimates)
 
-3. 📂📊:earth_americas::world_map: Plots.R [Data_analyses.R](https://github.com/souza-eab/SEEG_BR/tree/main/3._Plots)
 
 ### How to use
 1. [Create an account](https://signup.earthengine.google.com/) in the Google Earth Engine plataform.
