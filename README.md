@@ -1,7 +1,7 @@
 ![Github](https://img.shields.io/badge/Github-0.0.1-green.svg)<br/>
 <img src='./aux/seegbrasilhome__2_.png' height='auto' width='auto' align='right'>
 <div>
-<h1>  Three decades of GHG emissions and removals associated with land use change in Brazil </h1>
+<h1>  Improving estimations of GHG emissions and removals from land use change and forests in Brazil </h1>
 <div>
     
 # About SEEG_MUT
@@ -33,7 +33,7 @@ For clarification or an issue/bug report, please write to <barbara.zimbres@ipam.
 
 
 ## Citing
-    Zimbres, et al., Land Use Change in Brazil: A Three-Decade Analysis of Greenhouse Gas Emissions and Removals. 
+    Zimbres, et al., Improving estimations of GHG emissions and removals from land use change and forests in Brazil. 
 
 <div>
     <img src='./aux/ipam_logo.jpg' height='auto' width='160' align='right'>
