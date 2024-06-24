@@ -17,7 +17,7 @@
 /* @. Set user parameters */// eg.
 
 // Set directory for the output file
-var dir_output = 'projects/ee-seeg-brazil/assets/collection_9/v1/';
+var dir_output = 'projects/ee-seeg-br-c9/assets/v1/';
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -97,7 +97,7 @@ var PostClassification = function(image) {
 
 
 // Feature of the region of interest, in this case, all biomes in Brazil
-var Biomes = ee.FeatureCollection("projects/ee-seeg-brazil/assets/collection_9/v1/Biomes_BR"); 
+var Biomes = ee.FeatureCollection("projects/ee-seeg-br-c9/assets/aux/Biomes_BR"); 
 
 // Specify spatial filter parameters
 var filterParams = [
@@ -113,7 +113,7 @@ var years = ['1990','1991','1992','1993','1994','1995','1996','1997','1998','199
 var eeYears = ee.List(years);
 
 ///// Input the Asset 'REGENERATION MASK' exported from step 1.0
-var inputImage_regeneration = ee.Image('projects/ee-seeg-brazil/assets/collection_9/v1/1_0_Regeneration_masks'); // change to the asset you saved in the previous script
+var inputImage_regeneration = ee.Image('projects/ee-seeg-br-c9/assets/v1/1_0_Regeneration_masks'); // change to the asset you saved in the previous script
 
 // Apply functions
 var result_regeneration = eeYears.map(function(year){
@@ -143,7 +143,7 @@ Export.image.toAsset({
 });
 
 ///// Input the Asset 'DEFORESTATION MASK' exported from step 1.0  
-var inputImage_deforestation = ee.Image('projects/ee-seeg-brazil/assets/collection_9/v1/1.0_Deforestation_masks'); // change to the asset saved by you in the previous script
+var inputImage_deforestation = ee.Image('projects/ee-seeg-br-c9/assets/v1/1_0_Deforestation_masks'); // change to the asset saved by you in the previous script
 
 // Apply function 
 var result_deforestation = eeYears.map(function(year){
@@ -171,3 +171,21 @@ Export.image.toAsset({
     "maxPixels": 1e13,
     "region": Biomes.geometry().convexHull() //If desired, change here to the name of the desired region in Brazil
 });
+
+
+// Request the "Mapp" package to define map styles
+var Mapp = require('users/joaovsiqueira1/packages:Mapp.js'); 
+
+// Set the available map style options
+Map.setOptions({
+  'styles': {
+    'Dark': Mapp.getStyle('Dark'),
+    'Dark2':Mapp.getStyle('Dark2'),
+    'Aubergine':Mapp.getStyle('Aubergine'),
+    'Silver':Mapp.getStyle('Silver'),
+    'Night':Mapp.getStyle('Night'),
+  }
+});
+
+//  Set the default map style to "Satellite
+Map.setOptions('Silver');
