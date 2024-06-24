@@ -15,11 +15,11 @@
 // @. ~~~~~~~~~~~~~~ // 
 
 /* @. Set user parameters */// eg.
-var dir_output = 'projects/ee-seeg-br/assets/collection_9/v1/';
+var dir_output = 'projects/ee-seeg-br-c9/assets/v1/';
 
 // Load Asset
 // Load asset Biomes of Brazil
-var Biomes = ee.FeatureCollection("projects/ee-seeg-brazil/assets/collection_9/v1/Biomes_BR"); 
+var Biomes = ee.FeatureCollection("projects/ee-seeg-br-c9/assets/aux/Biomes_BR"); 
 
 // Load ImageCollection from Mapbiomas 6.0 
 var MapBiomas_col6 = ee.Image("projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_integration_v1");
@@ -163,7 +163,7 @@ Map.addLayer(MapBiomas_col6.select('classification_2013'), vis,"Mapbiomas_2013")
 Export.image.toAsset({
     "image": deforestation.unmask(0).uint8(),
     "description": '1_0_Deforestation_masks',
-    "assetId":dir_output + '1_0_Deforestation_masks', // Enter the address and name eg.' projects/ee-seeg-br/assets/collection_9/v1/' of the Asset to be exported
+    "assetId":dir_output + '1_0_Deforestation_masks', // Enter the address and name eg.' projects/ee-seeg-br-c9/assets/v1/' of the Asset to be exported
     "scale": 30,
     "pyramidingPolicy": {
         '.default': 'mode'
@@ -194,12 +194,12 @@ Export.image.toAsset({
 
 /* @. Set user parameters */// eg.
 
-// Set directory for the output file
-var dir_output = 'projects/ee-seeg-br/assets/collection_9/v1/';
+/* @. Set user parameters */// eg.
+var dir_output = 'projects/ee-seeg-br-c9/assets/v1/';
 
 // Load assets
 // Load asset Biomes of Brazil
-var Biomes = ee.FeatureCollection("projects/ee-seeg-brazil/assets/collection_9/v1/Biomes_BR"); 
+var Biomes = ee.FeatureCollection("projects/ee-seeg-br-c9/assets/aux/Biomes_BR"); 
 
 //  Load ImageCollection from Mapbiomas 6.0 
 var MapBiomas_col6 = ee.Image("projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_integration_v1");
@@ -330,7 +330,7 @@ Map.addLayer(regeneration.select('regeneration2020'), {'min': 0,'max': 1, 'palet
 Export.image.toAsset({
     "image": regeneration.unmask(0).uint8(),
     "description": '1_0_Regeneration_masks',
-    "assetId": dir_output + '1_0_Regeneration_masks', // Enter the address and name eg. ' projects/ee-seeg-br/assets/collection_9/v1/' of the Asset to be exported
+    "assetId": dir_output + '1_0_Regeneration_masks', // Enter the address and name eg. ' projects/ee-seeg-br-c9/assets/v1/' of the Asset to be exported
     "scale": 30,
     "pyramidingPolicy": {
         '.default': 'mode'
