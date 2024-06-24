@@ -338,3 +338,21 @@ Export.image.toAsset({
     "maxPixels": 1e13,
     "region": Biomes.geometry().bounds() // If desired, change here to the name of the desired region in Brazil
 });
+
+
+// Request the "Mapp" package to define map styles
+var Mapp = require('users/joaovsiqueira1/packages:Mapp.js'); 
+
+// Set the available map style options
+Map.setOptions({
+  'styles': {
+    'Dark': Mapp.getStyle('Dark'),
+    'Dark2':Mapp.getStyle('Dark2'),
+    'Aubergine':Mapp.getStyle('Aubergine'),
+    'Silver':Mapp.getStyle('Silver'),
+    'Night':Mapp.getStyle('Night'),
+  }
+});
+
+//  Set the default map style to "Satellite
+Map.setOptions('Silver');
