@@ -15,7 +15,7 @@
 // @. ~~~~~~~~~~~~~~ // 
 
 /* @. Set user parameters */// eg.
-var dir_output = 'projects/ee-seeg-brazil/assets/collection_9/v1/';
+var dir_output = 'projects/ee-seeg-br/assets/collection_9/v1/';
 
 // Load Asset
 // Load asset Biomes of Brazil
@@ -163,7 +163,7 @@ Map.addLayer(MapBiomas_col6.select('classification_2013'), vis,"Mapbiomas_2013")
 Export.image.toAsset({
     "image": deforestation.unmask(0).uint8(),
     "description": '1_0_Deforestation_masks',
-    "assetId":dir_output + '1_0_Deforestation_masks', // Enter the address and name eg.' projects/ee-seeg-brazil/assets/collection_9/v1/' of the Asset to be exported
+    "assetId":dir_output + '1_0_Deforestation_masks', // Enter the address and name eg.' projects/ee-seeg-br/assets/collection_9/v1/' of the Asset to be exported
     "scale": 30,
     "pyramidingPolicy": {
         '.default': 'mode'
@@ -195,7 +195,7 @@ Export.image.toAsset({
 /* @. Set user parameters */// eg.
 
 // Set directory for the output file
-var dir_output = 'projects/ee-seeg-brazil/assets/collection_9/v1/';
+var dir_output = 'projects/ee-seeg-br/assets/collection_9/v1/';
 
 // Load assets
 // Load asset Biomes of Brazil
@@ -330,7 +330,7 @@ Map.addLayer(regeneration.select('regeneration2020'), {'min': 0,'max': 1, 'palet
 Export.image.toAsset({
     "image": regeneration.unmask(0).uint8(),
     "description": '1_0_Regeneration_masks',
-    "assetId": dir_output + '1_0_Regeneration_masks', // Enter the address and name eg. ' projects/ee-seeg-brazil/assets/collection_9/v1/' of the Asset to be exported
+    "assetId": dir_output + '1_0_Regeneration_masks', // Enter the address and name eg. ' projects/ee-seeg-br/assets/collection_9/v1/' of the Asset to be exported
     "scale": 30,
     "pyramidingPolicy": {
         '.default': 'mode'
