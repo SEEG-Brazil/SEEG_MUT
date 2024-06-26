@@ -5,6 +5,7 @@
 /////////  Processing time <2h> in Google Earth Engine ////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //// Processing time >86 hours in Google Earth Engine
+//// Processing time 5-7h each task
 
 
 
@@ -22,22 +23,22 @@
 /* @. Set user parameters */// eg.
 
 // Set directory for the output file
-var dir_output = 'projects/ee-seeg-brazil/assets/collection_9/v1/2_1_Mask_stable/';
+var dir_output = 'projects/ee-seeg-br-c9/assets/v1/2_1_Mask_stable/';
 
 // Load Asset from MapBiomas collection 6.0  
 var mapbioDir = 'projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_integration_v1';
 var mapbiomas = ee.Image(mapbioDir)
 
 // Feature of the region of interest, in this case, all biomes in Brazil
-var assetRegions = "projects/ee-seeg-brazil/assets/collection_9/v1/Biomes_BR";
+var assetRegions = "projects/ee-seeg-br-c9/assets/aux/Biomes_BR";
 var regions = ee.FeatureCollection(assetRegions);
 
 // Load the filtered deforestation and regeneration masks
-var regenDir = 'projects/ee-seeg-brazil/assets/collection_9/v1/1_1_Temporal_filter_regeneration';
+var regenDir = 'projects/ee-seeg-br-c9/assets/v1/1_1_Temporal_filter_deforestation';
 var regen = ee.Image(regenDir);
 print("bandas regen", regen.bandNames());// regeneration since 1990
 
-var annualDesm = 'projects/ee-seeg-brazil/assets/collection_9/v1/1_1_Temporal_filter_deforestation';
+var annualDesm = 'projects/ee-seeg-br-c9/assets/v1/1_1_Temporal_filter_deforestation';
 var annualLoss = ee.Image(annualDesm); // deforestation since 1990
 print("bandas annualLoss", annualLoss.bandNames());
 
