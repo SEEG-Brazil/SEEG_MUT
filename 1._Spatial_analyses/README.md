@@ -55,7 +55,7 @@ This script stabilizes the base maps from a MapBiomas collection (currently, col
 
 ```javascript
 // Acessing Asset
-var Mask_stable = ee.ImageCollection('projects/ee-seeg-brazil/assets/collection_9/v1/2_1_Mask_stable')
+var Mask_stable = ee.ImageCollection('projects/ee-seeg-br-c9/assets/v1/2_1_Mask_stable')
   .toBands()
   .aside(print);
   
@@ -72,7 +72,7 @@ Map.addLayer(Mask_stable.select(['SEEG_c9_v1_2020_classification_2020']).clip(ro
 Map.addLayer(Mask_stable.select(['SEEG_c9_v1_2020_classification_2020']).clip(BiomesBR), vis, '2_1_Mask_stable_Biomes_BR',false);
   
 ```
-[Link to script](https://code.earthengine.google.com/d08ff95922dfe6689e1bc221b0c7f0c5)
+[Link to script](https://code.earthengine.google.com/2ab1c3a0ea513ae0a9e028ec4eb86d92)
 
 
 # 3.0 [Annual Transition maps.js](https://github.com/SEEG-Brazil/SEEG_MUT/blob/main/1._Spatial_analyses/3.0_Transition_maps.js)
