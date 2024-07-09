@@ -13,13 +13,13 @@ The first step for the calculations of SEEG Land Use Change Sector is to classif
 **Anthropic Land Use:** Forest Plantation (9), Pasture (15), Sugar Cane (20), Mosaic of Agriculture and Pasture (21), Urban Infrastructure (24), Other non Vegetated Areas (25), Mining (30), Aquaculture (31), Perennial Crop (36), Soybean (39), and Other Temporary Crops (41).
 
 ```javascript
-var Def = ee.Image('projects/ee-seeg-brazil/assets/collection_9/v1/1_0_Deforestation_masks');
+var Def = ee.Image('projects/ee-seeg-br-c9/assets/v1/1_0_Deforestation_masks');
 Map.addLayer(Def.select('deforestation2020').selfMask(), {'min': 0,'max': 1, 'palette': '#FFFFFF,#FF0000'},"Deforestation_2020");
 
-var Reg = ee.Image('projects/ee-seeg-brazil/assets/collection_9/v1/1_0_Regeneration_masks');
+var Reg = ee.Image('projects/ee-seeg-br-c9/assets/v1/1_0_Regeneration_masks');
 Map.addLayer(Reg.select('regeneration2020').selfMask(), {'min': 0,'max': 1, 'palette': '#FFFFFF,#00FF00'},"Regeneration_2020") 
 ```
-[Link to script](https://code.earthengine.google.com/4051918e07c956ad8524957dff747d83)
+[Link to script](https://code.earthengine.google.com/58b6c4c4cddc9c2397a0734b6bb036db)
 
 # 1.1 [Spatial_filter.js](https://github.com/SEEG-Brazil/SEEG_MUT/blob/main/1._Spatial_analyses/1.1_Spatial_filter.js)
 
