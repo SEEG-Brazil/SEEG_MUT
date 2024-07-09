@@ -87,7 +87,7 @@ This way, we end up with pairwise transition maps, in which the information of t
 ```javascript
 
 // Add Asset  3.0 Transitions_maps
-var listImages = ee.data.listAssets('projects/ee-seeg-brazil/assets/collection_9/v1/3_0_Transitions_maps').assets;
+var listImages = ee.data.listAssets('projects/ee-seeg-br-c9/assets/v1/3_0_Transition_maps').assets;
 
 var image = ee.Image().select();
 
@@ -116,7 +116,7 @@ Map.addLayer(image_2.clip(roi),vis,'img-2 .divide(10000).int()-ROI2',false);
 Map.addLayer(image_3.clip(BiomesBR),vis,'img-3 .divide(100).int().mod(100)-ROI3',false);
 Map.addLayer(image_4.clip(roi),vis,'img-4 .mod(100)-Roi4',false);
 ```
-[Link to script](https://code.earthengine.google.com/a49a06b9bcc0723a198d536970fbc64b)
+[Link to script](https://code.earthengine.google.com/74a7c0a068fb3308a0f1ee5031fa1385)
 
 
 
@@ -131,14 +131,14 @@ This step exports transition maps of each pair of years covering the time period
 // In the previous step 3.0, we generated an ImageCollection, and now we are going to stack it into a single image.
 
 // Set directory for the output file
-var dir_output = 'projects/ee-seeg-brazil/assets/collection_9/v1/';
+var dir_output = 'projects/ee-seeg-br-c9/assets/v1/';
 
 // Export parameters
 var gfolder = 'TEMP';                // google drive folder 
 var assetId = 'projects/mapbiomas-workspace/SEEG/2021/Col9'; // asset link
 
 // Define data path
-var dir = 'projects/ee-seeg-brazil/assets/collection_9/v1/3_0_Transitions_maps';
+var dir = 'projects/ee-seeg-br-c9/assets/v1/3_0_Transition_maps';
 
 // Define filename prefix
 var prefix = 'SEEG_Transitions_';
@@ -178,7 +178,7 @@ print(recipe);
     'maxPixels': 1e13
 });
 ```
-[Link to script](https://code.earthengine.google.com/deefc5a08bfdc246263c999ba97b12ab)
+[Link to script](https://code.earthengine.google.com/3b6b49e0408518dba233600ec7b8cf8f)
 
 
 # 4.0 [CalcAreaZone.ipynb](https://github.com/SEEG-Brazil/SEEG_MUT/blob/main/1._Spatial_analyses/4.0_CalcAreaZone.ipynb)
