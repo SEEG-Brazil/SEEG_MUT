@@ -32,13 +32,13 @@ The second step is the application of a temporal filter in every pixel, of at le
 ```javascript
 // Temporal rules for the generation of the deforestation mask (natural vegetation loss) and the regeneration mask (natural vegetation gain) for each year of the MapBiomas time series. 
 
-var Def_filter = ee.Image('projects/ee-seeg-brazil/assets/collection_9/v1/1_0_Deforestation_masks');
+var Def_filter = ee.Image('projects/ee-seeg-br-c9/assets/v1/1_0_Deforestation_masks');
 Map.addLayer(Def_filter.select('deforestation2020').selfMask(), {'min': 0,'max': 1, 'palette': '#FFFFFF,#FF0000'},"Deforestation_filter_2020");
 
-var Reg_filter = ee.Image('projects/ee-seeg-brazil/assets/collection_9/v1/1_0_Regeneration_masks');
+var Reg_filter = ee.Image('projects/ee-seeg-br-c9/assets/v1/1_0_Regeneration_masks');
 Map.addLayer(Reg_filter.select('regeneration2020').selfMask(), {'min': 0,'max': 1, 'palette': '#FFFFFF,#00FF00'},"Regeneration_filter_2020") 
 ```
-[Link to script](https://code.earthengine.google.com/2168f9616bebe4834b4dd9fe7f328c43)
+[Link to script](https://code.earthengine.google.com/2dc2cf78cebf51b7b12149a8440164ca)
 
 
 # 2.0 [Stabilized_cover.js](https://github.com/SEEG-Brazil/SEEG_MUT/blob/main/1._Spatial_analyses/2.0_Stabilized_cover.js)
