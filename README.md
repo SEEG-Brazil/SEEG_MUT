@@ -28,6 +28,14 @@ We present a method to spatially allocate all of the emissions and removals due 
 
 5. Download or clone this repository to your local workspace.
 
+
+##### or User with access to the repository can add it to the Code Editor using:
+
+1.1 [Accept Repository .EE (Spatial analyses) ](https://code.earthengine.google.com/?accept_repo=users/seeg-brazil/c9)
+
+1.2 [Clone the gitRe by running the following command in a terminal: git clone](https://earthengine.googlesource.com/users/seeg-brazil/c9)
+
+
 #### Reporting Issues
 For clarification or an issue/bug report, please write to <barbara.zimbres@ipam.org.br> and/or <edriano.souza@ipam.org.br> 
 
