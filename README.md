@@ -41,10 +41,11 @@ We present a method to spatially allocate all of the emissions and removals due 
 For clarification or an issue/bug report, please write to <barbara.zimbres@ipam.org.br> and/or <edriano.souza@ipam.org.br> 
 
 
-## Citation and open acess 
-
+## Citation and open access 
+```javascript
+Zimbres, B., Shimbo, J., Lenti, F., Brandão, A., Souza, E., Azevedo, T., & Alencar, A. (2024). Improving estimations of GHG emissions and removals from land use change and forests in Brazil. _Environmental Research Letters_, 19(9), 094024.
+```
 [Improving estimations of GHG emissions and removals from land use change and forests in Brazil](https://iopscience.iop.org/article/10.1088/1748-9326/ad64ea)
-    Zimbres, B., Shimbo, J., Lenti, F., Brandão, A., Souza, E., Azevedo, T., & Alencar, A. (2024). Improving estimations of GHG emissions and removals from land use change and forests in Brazil. _Environmental Research Letters_, 19(9), 094024.
 
 <div>
     <img src='./aux/ipam_logo.jpg' height='auto' width='160' align='right'>
