@@ -44,7 +44,7 @@ For clarification or an issue/bug report, please write to <barbara.zimbres@ipam.
 ## DOI (Print)
 
 [Improving estimations of GHG emissions and removals from land use change and forests in Brazil](https://iopscience.iop.org/article/10.1088/1748-9326/ad64ea)
-    Zimbres, et al 2024. Improving estimations of GHG emissions and removals from land use change and forests in Brazil. Environ. Res. Lett. in press
+    Zimbres, B., Shimbo, J., Lenti, F., Brandão, A., Souza, E., Azevedo, T., & Alencar, A. (2024). Improving estimations of GHG emissions and removals from land use change and forests in Brazil. _Environmental Research Letters_, 19(9), 094024.
 
 <div>
     <img src='./aux/ipam_logo.jpg' height='auto' width='160' align='right'>
